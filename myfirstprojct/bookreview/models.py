@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class Author(models.Model):
     objects = models.Manager
@@ -8,7 +9,8 @@ class Author(models.Model):
     email = models.CharField(max_length=255)
 
     def __str__(self):
-        return f'Author ({self.firstName}, {self.lastName}, {self.email})'
+        return f'Author ({self.firstName},  {self.lastName},  {self.email})'
+
 
 class Book(models.Model):
     objects = models.Manager
